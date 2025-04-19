@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>夜间高血压预测</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- 语言选择器 -->
+    <div class="lang-selector">
+      <select id="langSelector" onchange="onLangChange()">
+        <option value="zh">简体中文</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+
+    <!-- 帮助按钮 -->
+    <div class="help-selector">
+      <button id="helpButton" onclick="onHelpTap()">帮助</button>
+    </div>
+
+    <!-- 数据输入区域 -->
+    <div class="row">
+      <label id="label0"></label>
+      <select id="picker0" onchange="onPickerChange(0)">
+        <option value="">请选择</option>
+        <option value="1">是</option>
+        <option value="0">否</option>
+      </select>
+    </div>
+    <div class="row">
+      <label id="label1"></label>
+      <input type="number" id="input1" oninput="onInput(1)" step="0.01" min="0.01">
+    </div>
+    <div class="row">
+      <label id="label2"></label>
+      <input type="number" id="input2" oninput="onInput(2)" step="0.01" min="0.01">
+    </div>
+    <div class="row">
+      <label id="label3"></label>
+      <select id="picker3" onchange="onPickerChange(3)">
+        <option value="">请选择</option>
+        <option value="1">是</option>
+        <option value="0">否</option>
+      </select>
+    </div>
+    <div class="row">
+      <label id="label4"></label>
+      <input type="number" id="input4" oninput="onInput(4)" step="0.01" min="0.01">
+    </div>
+    <div class="row">
+      <label id="label5"></label>
+      <input type="number" id="input5" oninput="onInput(5)" step="0.01" min="0.01">
+    </div>
+    <div class="row">
+      <label id="label6"></label>
+      <input type="number" id="input6" oninput="onInput(6)" step="1" min="1">
+    </div>
+    <button id="submitButton" onclick="onSubmit()">提交</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
