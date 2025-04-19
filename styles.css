@@ -1,0 +1,134 @@
+/* 修改后的全局样式 */
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.container {
+  width: 90%;
+  max-width: 680px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* 输入控件美化 */
+.row {
+  margin-bottom: 1.8rem;
+}
+
+.row input,
+.row select {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  background: #f8f9fa;
+}
+
+.row input:focus,
+.row select:focus {
+  border-color: #007aff;
+  box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+  outline: none;
+}
+
+/* 按钮美化 */
+button {
+  background: linear-gradient(135deg, #00d7ff 0%, #00afff 100%);
+  border-radius: 12px;
+  padding: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  border: none;
+  margin-top: 2rem;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 122, 255, 0.2);
+}
+
+/* 返回按钮美化 */
+#returnButton {
+  background: linear-gradient(135deg, #d3d3d3 0%, #a9a9a9 100%);
+  border-radius: 12px;
+  padding: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  border: none;
+  margin-top: 2rem;
+}
+
+#returnButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(169, 169, 169, 0.2);
+}
+
+/* 结果页面优化 */
+.section-title {
+  font-size: 1.4rem;
+  color: #2d3436;
+  margin: 2rem 0 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #007aff;
+  display: inline-block;
+}
+
+#dataDisplay .row {
+  background: #f8f9fa;
+  padding: 1.2rem;
+  border-radius: 12px;
+  margin-bottom: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
+/* 分类结果样式增强 */
+.classification-text {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* 语言选择器美化 */
+.lang-selector select {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+  appearance: none;
+  background: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e") no-repeat right 1rem center/1rem;
+  padding-right: 3rem; /* 增加右侧内边距以避免文字和箭头重叠 */
+}
+
+/* 帮助按钮样式 */
+.help-selector button {
+  background: linear-gradient(135deg, #34c759 0%, #248a3d 100%);
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+}
+
+/* 免责声明增强 */
+.disclaimer {
+  background: #fff3d8;
+  padding: 1.2rem;
+  border-radius: 12px;
+  border: 1px solid #ffe6b7;
+  margin-top: 2rem;
+}
